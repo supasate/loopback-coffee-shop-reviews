@@ -1,0 +1,25 @@
+product: '1.0.0'
+
+info:
+  name: loopback-getting-started-intermediate
+  title: loopback-getting-started-intermediate
+  version: 1.0.0
+
+apis:
+  'loopback-getting-started-intermediate':
+    $ref: loopback-getting-started-intermediate.yaml
+
+visibility:
+  view:
+    type: public
+  subscribe:
+    type: authenticated
+
+plans:
+  default:
+    title: Default Plan
+    description: Default Plan
+    approval: false
+    rate-limit:
+      value: 100/hour
+      hard-limit: false
